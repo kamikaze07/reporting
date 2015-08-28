@@ -1,0 +1,218 @@
+@-webkit-keyframes fancy-enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5); }
+
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    opacity: 0.9;
+    -webkit-transform: scale(1); } }
+
+@keyframes fancy-enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); }
+
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+  100% {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes color-fade {
+  0% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes color-fade {
+  0% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes color-fade-2 {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes color-fade-2 {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  93% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  94% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+
+  95% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  96% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+
+  97% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  98% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+
+  99% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  93% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  94% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px); }
+
+  95% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  96% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); }
+
+  97% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  98% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); }
+
+  99% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+
+
+#color-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  background: #8edcda;
+  background: -webkit-linear-gradient(#8edcda 0%, #59addb 100%);
+  background: linear-gradient(#8edcda 0%, #59addb 100%);
+  background: -ms-linear-gradient(top, #8edcda 0%, #59addb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8edcda', endColorstr='#59addb',GradientType=0 ); }
+
+#color-background::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(#ffeb83 0%, #ffa749 100%);
+  background: linear-gradient(#ffeb83 0%, #ffa749 100%);
+  z-index: -1;
+  -webkit-animation-name: color-fade;
+  animation-name: color-fade;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s; }
+
+#color-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(#ff81f8 0%, #af55d2 100%);
+  background: linear-gradient(#ff81f8 0%, #af55d2 100%);
+  z-index: -1;
+  -webkit-animation-name: color-fade-2;
+  animation-name: color-fade-2;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s; }
